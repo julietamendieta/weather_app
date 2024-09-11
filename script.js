@@ -34,10 +34,10 @@ function mostrarDatosClima(response){
     temp.textContent = `The temperature is ${Math.floor(temperature-difKelvinCelsius)}°C`
 
     const desc = document.createElement('p')
-    desc.textContent = description
+    desc.textContent = `${description}`
 
     const hum = document.createElement('p')
-    desc.textContent = `The humidity is ${humidity}%`
+    hum.textContent = `The humidity is ${humidity}%`
 
     divDatosClima.appendChild(title)
     divDatosClima.appendChild(temp)
